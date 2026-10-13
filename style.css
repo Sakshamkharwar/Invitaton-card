@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f8efe0;
+    color: #4b1726;
+    padding: 25px 12px;
+}
+/* sticker */
+.ganesh-logo {
+    text-align: center;
+    margin: 20px auto;
+}
+.ganesh-logo img {
+    width: 150px;
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+@media (max-width: 480px){
+    .ganesh-logo img {
+        width: 140px;
+    }
+}
+.invitation {
+    max-width: 750px;
+    margin: auto;
+    padding: 45px 28px;
+    text-align: center;
+    background: #fffaf0;
+    border: 3px double #c69a45;
+    outline: 1px solid #c69a45;
+    outline-offset: -10px;
+    box-shadow: 0 10px 40px #70431b25;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.flowers {
+    font-size: 34px;
+    letter-spacing: 8px;
+    margin-bottom: 18px;
+}
+
+.om {
+    font-size: 35px;
+    color: #b88632;
+    margin-bottom: 14px;
+}
+/* BLESSING SECTION */
+.ganesh-blessing {
+    text-align: center;
+    margin: 0 auto 28px;
+    padding: 12px 10px 18px;
+    max-width: 500px;
+    position: relative;
+}
+
+.ganesh-mantra {
+    color: #8b1e32;
+    font-size: clamp(19px, 4vw, 27px);
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-shadow: 0 1px 1px #d7b56d55;
+}
+
+.ganesh-icon {
+    font-size: 35px;
+    margin: 8px 0;
+    filter: drop-shadow(0 2px 2px #c69a4544);
+}
+
+.blessing-text {
+    color: #9b7028;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.golden-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 230px;
+    margin: 16px auto 0;
+    color: #c69a45;
+}
+
+.golden-divider::before,
+.golden-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #c69a45
+    );
+}
+
+.golden-divider::after {
+    transform: rotate(180deg);
+}
+
+.golden-divider span {
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    .ganesh-blessing {
+        margin-bottom: 18px;
+        padding-top: 5px;
+    }
+
+    .blessing-text {
+        font-size: 11px;
+    }
+}
+
+.small-title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #9d7130;
+}
+
+h1 {
+    font-size: clamp(40px, 9vw, 68px);
+    font-style: italic;
+    font-weight: normal;
+    margin: 18px 0 4px;
+    color: #7b1735;
+}
+
+.subtitle {
+    font-size: 17px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.names {
+    font-size: clamp(30px, 7vw, 48px);
+    color: #8c1d3b;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.heart {
+    color: #c99a39;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.message {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 22px auto;
+    max-width: 500px;
+    color: #3e3030;
+}
+
+.gold-line {
+    width: 70%;
+    margin: 25px auto;
+    border: none;
+    border-top: 1px solid #c69a45;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 12px;
+    margin: 30px 0;
+}
+
+.detail {
+    padding: 15px 5px;
+    border: 1px solid #e5d2aa;
+    border-radius: 8px;
+    background: #fffdf8;
+}
+
+.detail .icon {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.detail h3 {
+    font-size: 14px;
+    color: #a57930;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.detail p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #44232a;
+}
+
+.qr-section {
+    margin: 30px auto;
+    padding: 22px 12px;
+    border: 1px dashed #c69a45;
+    border-radius: 12px;
+    max-width: 340px;
+}
+
+.qr-section h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+#qrCode {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 15px auto;
+    background: white;
+    object-fit: contain;
+}
+
+.qr-note {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #725a4d;
+}
+
+button, .map-button {
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 23px;
+    margin-top: 15px;
+    background: #7b1735;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover, .map-button:hover {
+    background: #b88632;
+    transform: translateY(-2px);
+}
+
+.footer {
+    font-size: 23px;
+    font-style: italic;
+    color: #8c1d3b;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.footer small {
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    color: #715b4c;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px 7px;
+    }
+
+    .invitation {
+        padding: 35px 17px;
+    }
+
+    .flowers {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    .small-title {
+        letter-spacing: 2px;
+    }
+
+    .details {
+        gap: 12px 8px;
+    }
+
+    .detail p {
+        font-size: 13px;
+    }
+
+    #qrCode {
+        width: 160px;
+        height: 160px;
+    }
+}
